@@ -1,0 +1,167 @@
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.time-option-container {
+  display: flex;
+  align-items: center;
+}
+
+.radio-hide {
+  /* background-color: grey; */
+  cursor: pointer;
+  /* padding: 0.5rem; */
+  margin: 0;
+  line-height: 2rem;
+}
+
+.radio-hide input {
+  left: -999em;
+  position: absolute;
+}
+
+#time-option-selector {
+  display: flex;
+  gap: 0.5rem;
+  /* padding: 0.5rem; */
+  background-color: #EBEBEB;
+  border: 1px solid #E4E4E4;
+  border-radius: 12px;
+  height: 2.5rem;
+  padding-inline: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input, select {
+  background-color: #FFFFFF;
+  border: 1px solid #E7E4E4;
+  border-radius: 10px;
+  outline: none;
+  height: 2.5rem;
+  padding: 0.5rem;
+}
+
+label {
+  margin-top: 0.5rem;
+}
+
+#name {
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #E7E4E4;
+  height: 3rem;
+  font-size: 1.9rem;
+  width: 60%;
+  resize:none;
+  /* word-wrap: break-word; */
+  margin-bottom: 0.5rem;
+  outline: none;
+}
+
+#description {
+  background-color: #FFFFFF;
+  border: 1px solid #E7E4E4;
+  border-radius: 10px;
+  resize:none;
+  width: 100%;
+  height: 8rem;
+  padding: 0.5rem;
+  outline: none;
+  flex-grow: 1;
+}
+
+.label-text {
+  margin-left: 0.5rem;
+}
+
+.time-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.tag-input {
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+#schedule {
+  width: 1rem;
+  margin-left: 0.5rem;
+  accent-color: #707070;
+}
+
+.schedule-options {
+  display: none;
+}
+
+.show-time {
+  display: flex;
+  flex-direction: column;
+  /* width: 85%; */
+  margin-right: 0;
+  margin-left:auto;
+}
+
+.flex-with-gap {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.grow-1 {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.all-day-select {
+  border-right: 1px solid black;
+  padding-right: 0.5rem;
+}
+
+.save-cancel-button {
+  background-color: transparent;
+  border: none;
+  width: 5rem;
+  height: 5rem;
+  outline: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.save-cancel-button:hover {
+  background-color: #EBEBEB;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.save-cancel-button:active {
+  background-color: #d3d3d3;
+}
+
+.save-cancel-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.save-cancel-text {
+  font-size: 1rem;
+}
+
+.controller-delete:hover {
+  background-color: rgb(255, 146, 146);
+  color:rgb(0, 0, 0);
+}

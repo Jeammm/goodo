@@ -1,0 +1,67 @@
+.NavBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.goodoo-logo-img {
+  width: 4rem;
+}
+
+.nav-item__box {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  background: #F8F8F8;
+  border: 1px solid #F6F6F6;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+}
+
+.nav-item__logo-ham {
+  flex-grow: 0.1;
+}
+
+.nav-item__search-sort {
+  flex-grow: 0.9;
+}
+
+.nav-item__notification {
+  flex-grow: 0;
+}
+
+.nav-item__search {
+  flex-grow: 1;
+}
+
+.nav-item__sort {
+  padding-left: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.nav-item-text {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.nav-item__box--text {
+  padding-right: 1rem;
+}
+
+.nav-item__box--input {
+  background-color: inherit;
+  border: none;
+}
+
+.nav-item__box--input:focus {
+  outline: none;
+}

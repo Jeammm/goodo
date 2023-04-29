@@ -1,0 +1,21 @@
+main {
+  display: flex;
+  padding: 1.5rem;
+  height: 100%;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  /* height: 12px; */
+  width: 5px;
+  background: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #969696;
+  -webkit-border-radius: 2px;
+}
+
+/* ::-webkit-scrollbar-corner {
+  background: #000;
+} */

@@ -1,0 +1,15 @@
+.information {
+  display: flex;
+  height: 100%;
+}
+
+.list-side {
+  min-width: 50%;
+  width: 100%;
+}
+
+.no-item-here {
+  font-size: 2rem;
+  padding: 3rem;
+  color: rgb(156, 156, 156);
+}

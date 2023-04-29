@@ -1,0 +1,50 @@
+.active-list {
+  border: 1.5px solid #EDEDED;
+  border-radius: 10px;
+  padding: 0.7rem 1.7rem;
+  display: flex;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+
+.active-list-header {
+  margin-bottom: 0.8rem;
+  padding-left: 2rem;
+  padding-top: 1.2rem;
+}
+
+.active-list-text {
+  margin-left: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.go-right {
+  margin-left: auto;
+  visibility: hidden;
+}
+
+.fav-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.active-list:hover {
+  background-color: #F4F4F4;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.active-list:hover .go-right {
+  visibility: visible;
+  transition: all .2s ease;
+}
+
+.active-list:active {
+  background-color: #d3d3d3;
+}
+
+.selected {
+  background-color: #EBEBEB;
+}
