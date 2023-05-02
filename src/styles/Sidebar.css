@@ -1,11 +1,19 @@
+
 .sidebar {
   background-color: #F4F4F4;
   border-radius: 20px;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   height: 100%;
-  width: 7rem;
+  width: 5rem;
+  transition: all 0.3s ease;
+  justify-content: center;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.sidebar-container-active {
+  width: 17rem;
+  padding: 1rem;
 }
 
 .new-todo {
@@ -23,6 +31,8 @@
   align-items: center;
   border-radius: 10px;
   padding: 0.5rem;
+  margin: 0.3rem;
+  height: 3rem;
 }
 
 .topic-item__text, .category-item__text, .setting-text {
@@ -66,8 +76,29 @@
 .new-todo {
   cursor: pointer;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 .new-todo:hover {
   background-color: #ab3933;
+}
+
+.not-active {
+  justify-content: center;
+  /* width: 3rem; */
+}
+
+.not-active > p {
+  display: none;
+}
+
+.not-active > span {
+  /* width: 3rem; */
+  text-align: center;
+}
+
+.hide-menu-text {
+  opacity: 0;
+  overflow: hidden;
 }

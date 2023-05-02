@@ -3,16 +3,22 @@ import { useState, useEffect } from "react";
 import "../styles/Home.css";
 import NavBar from "../components/NavBar";
 import Content from "../components/Content";
-import { get_notes } from "../services/getNotes";
+import { get_notes, get_categories } from "../services/getNotes";
 
 function Home() {
   const [notes, setNotes] = useState([]);
-  const [detailOpen, setDetailOpen] = useState([false, false, "active", 0]); //sidetab, content, tabno., contentno.
+  const [categories, setCategories] = useState([]);
+  const [detailOpen, setDetailOpen] = useState([true, false, "active", 0]); //sidetab, content, tabno., contentno.
 
   useEffect(() => {
-    console.log(detailOpen[2])
+    // console.log(detailOpen[2])
     get_notes(detailOpen[2]).then((data) => setNotes(data));
+    get_categories().then((data) => setCategories(data));
   }, [detailOpen[2], detailOpen[3]]);
+
+  const reloadNotes = () => {
+    get_notes(detailOpen[2]).then((data) => setNotes(data));
+  };
 
   const fetchNotes = (fn) => {
     //update active list
@@ -45,7 +51,7 @@ function Home() {
     //close most-right side content
     // console.log(detailOpen)
     setDetailOpen((prev) => {
-      return [prev[0], false, prev[2], prev[3]];
+      return [prev[0], false, prev[2], 0];
     });
   };
 
@@ -59,14 +65,17 @@ function Home() {
 
   return (
     <main className="main">
+      backend is suck so I left it here
       <NavBar toggleDetail={toggleDetail} />
       <Content
         data={notes}
+        categories={categories}
         changeContent={changeContent}
         changeTab={changeTab}
         detailOpen={detailOpen}
         closeContent={closeContent}
         addNewTodo={addNewTodo}
+        reloadNotes={reloadNotes}
       />
     </main>
   );

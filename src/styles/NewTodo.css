@@ -30,7 +30,7 @@ form {
   background-color: #EBEBEB;
   border: 1px solid #E4E4E4;
   border-radius: 12px;
-  height: 2.5rem;
+  height: 2rem;
   padding-inline: 0.5rem;
   justify-content: center;
   align-items: center;
@@ -69,7 +69,6 @@ label {
   border-radius: 10px;
   resize:none;
   width: 100%;
-  height: 8rem;
   padding: 0.5rem;
   outline: none;
   flex-grow: 1;
@@ -115,6 +114,8 @@ label {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  margin: 0.2rem;
+  font-size: 0.8rem;
 }
 
 .grow-1 {
@@ -154,7 +155,7 @@ label {
 .save-cancel-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 .save-cancel-text {
@@ -164,4 +165,12 @@ label {
 .controller-delete:hover {
   background-color: rgb(255, 146, 146);
   color:rgb(0, 0, 0);
+}
+
+.flex-with-gap input, .flex-with-gap select {
+  height: 2rem;
+  font-size: 0.8rem;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }

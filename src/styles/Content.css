@@ -9,9 +9,11 @@
 .sidebar {
   width: 20%;
   justify-self: center;
+  flex-shrink: 0;
 }
 
 .information {
   width: 80%;
   padding-left: 0.75rem;
+  flex-grow: 1;
 }

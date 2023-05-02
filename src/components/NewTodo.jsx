@@ -102,7 +102,7 @@ function NewTodo(props) {
             aria-invalid="false"
             className="width-100"
           >
-            <option value="" disabled selected>
+            <option value="" disabled defaultValue>
               select priority
             </option>
             <option value="high">High</option>
@@ -191,7 +191,7 @@ function NewTodo(props) {
             className="save-cancel-button controller-delete"
             onClick={() => props.closeContent()}
           >
-            <span class="material-symbols-outlined">cancel</span>
+            <span className="material-symbols-outlined">cancel</span>
             <div className="save-cancel-text">Cancel</div>
           </div>
           <button
@@ -199,7 +199,7 @@ function NewTodo(props) {
             name="save-button"
             className="save-cancel-button"
           >
-            <span class="material-symbols-outlined">save</span>
+            <span className="material-symbols-outlined">save</span>
             <div className="save-cancel-text">Savel</div>
           </button>
         </div>
